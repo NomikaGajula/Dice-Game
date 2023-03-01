@@ -24,10 +24,10 @@ app.post("/",function (req,res) {
 			]
 	};
 	const jsonData=JSON.stringify(data);
-	const url="https://us13.api.mailchimp.com/3.0/lists/8ec9ab551d"
+	const url="apikeyurl_to_access"
    const options={
    	method:"POST",
-   	auth:"angela:202ce00abc9179821b37703bf6d4713c-us13"
+   	auth:"apikey"
    }
    const request=https.request(url,options,function(response){
    	if(response.statusCode===200){
